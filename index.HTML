@@ -6,19 +6,22 @@
     <title>Jaron Full Stack Developer</title>
     <link rel="stylesheet" href="styless.css">
     <script src="script.js"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 </head>
 <body>
 <div class="container">
-    <h1>Jaron Portillo</h1>
+    <h1>Jaron Portfolio</h1>
     <p>Full Stack Developer</p>
 </div>
 <div class="projects">
     <h2>Projects</h2>
     <ul>
-        <li><a href="project1.html">Project 1</a></li>
+        <li><a href="https://github.com/JaronL-Tech/discord-rpg-bot.git" title="Discord-SW5e-Downtime-bot">Discord-SW5e-Downtime-bot</a></li>
         <li><a href="project2.html">Project 2</a></li>
         <li><a href="project3.html">Project 3</a></li>
-    </ul>
+    </ul>a
 </div>
     <div class="contact-information">
         <p>Phone: (123) 456-7890</p>
@@ -32,6 +35,20 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send</button>
+    </form>
+</section>
 </body>
 </html>
