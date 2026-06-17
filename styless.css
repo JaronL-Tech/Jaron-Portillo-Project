@@ -65,3 +65,22 @@ canvas {
 element.style {
     display: block;
 }
+
+.about-text {
+    padding: 5rem 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; 
+}
