@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* light mode variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --button-bg: #1a1a1a;
+  --button-text: #ffffff;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --button-bg: #f5f5f5;
+  --button-text: #121212;
+}
+
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -10,10 +27,23 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     overflow-x: hidden;
     display:block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+button {
+    
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 *, *::before, *::after {
     margin: 0;
